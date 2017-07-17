@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>querynz-duags</display-name>
+  
+  <!-- WEB容器启动 -->
+  <context-param>
+  		<param-name>contextConfigLocation</param-name>
+  		<param-value>
+  			/WEB-INF/config/application-context.xml
+  		</param-value>
+  </context-param>
+  
+  <!-- 首先启动spring dispatcherServlet 通过这个启动WEB容器 -->
+  <servlet>
+  		<servlet-name>JeeCmsAdmin</servlet-name>
+  		<servlet-class>org.springfremework.web.servlet.DispatcherServlet</servlet-class>
+  		<!-- 初始化WEB容器 -->
+  		<init-param>
+  			<param-name>contextConfigLocation</param-name>
+  			<param-value>
+  				
+  			</param-value>
+  		</init-param>
+  </servlet>
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>

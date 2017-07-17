@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>站点管理-右侧</title>
+
+<style type="text/css">
+.page-positon{width:100%; background-color:#f8fcff; border-bottom:1px dotted #b4d8f2;}
+.position-div{height:26px; line-height:26px; text-indent:20px; color:#555555; font-size:12px;}
+.position-div a{ color:#555555;}
+.box-positon{margin:16px 20px 0 20px; padding-bottom:14px; border-bottom:4px solid #f3f3f3;}
+.ropt{}
+.add/*添加*/{display:inline-block; color:#fff; font-size:13px; font-weight:bold; background:url(./publish-content.png) 8px center no-repeat #3694d7; border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px; -webkit-border-radius:3px; height:28px; line-height:28px; text-indent:18px; cursor:pointer; width:60px; outline:none;}
+.clear{ clear:both; font-size:0; line-height:0; height:0; width:100%; overflow:hidden;}
+	
+</style>
+</head>
+<body>
+
+	<div class="page-positon ove">
+  		<div class="position-div">当前位置：站点管理>列表</div>
+	</div>	
+	<!-- 增加按钮 -->
+	<div class="box-positon">
+		<form class="ropt">
+			<input class="add" type="submit" value="增加站点"/>
+		</form>
+		<div class="clear"></div>
+	</div>
+	<div class="body-box">
+		<form id="tableForm" method="post">
+			<table>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>ID</td>
+					<td>域名</td>
+					<td>访问路径</td>
+					<td>站点名称</td>
+					<td>路径</td>
+					<td>动态页后缀</td>
+					<td>静态页后缀</td>
+					<td>前台本地化</td>
+					<td>可操作选项</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>33330</td>
+					<td>www.queyrnz.com</td>
+					<td>www.queyrnz.com</td>
+					<td>牛逼了</td>
+					<td>路径</td>
+					<td>.jsp</td>
+					<td>.html</td>
+					<td>zh_ch</td>
+					<td>可转载站点|修改|删除</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
