@@ -3,8 +3,80 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>内容-左侧</title>
+<style type="text/css">
+ol{ list-style-type:none; margin:0; padding:0;}
+.w230{ width:229px; height:100%;}
+.w229{ width:189px; height:100%; padding:20px;}
+.w229 ol li { line-height:28px; text-indent:33px; margin-bottom:8px; background:url(../ico_yuandian2.gif) no-repeat 16px center; cursor:pointer; font-size:13px; font-weight:normal;}
+.w229 ol li, .w229 ol li a{ color:#333333; font-size:13px;}
+.w229 ol li.leftCurr{ border-radius:10px; background:#fff url(../ico_yuandian1.gif) no-repeat 16px center; font-weight:bold;}
+.fresh{width:100%; height:26px; line-height:26px; background-color:#dceefb; border-bottom:1px solid #cce3f3;}
+
+</style>
 </head>
 <body>
-内容-左侧
+
+	<div class="w230 f_l ove">
+		<!-- 刷新 -->
+		<div class="fresh" style="font-size:12px; text-indent:36px;">
+			<span> 
+ 	<script language="javascript">
+       var day="";
+       var month="";
+       var ampm="";
+       var ampmhour="";
+       var myweekday="";
+       var year="";
+       mydate=new Date();
+       myweekday=mydate.getDay();
+       mymonth=mydate.getMonth()+1;
+       myday= mydate.getDate();
+       year= mydate.getFullYear();
+       if(myweekday == 0)
+       weekday=" 星期日 ";
+       else if(myweekday == 1)
+       weekday=" 星期一 ";
+       else if(myweekday == 2)
+       weekday=" 星期二 ";
+       else if(myweekday == 3)
+       weekday=" 星期三 ";
+       else if(myweekday == 4)
+       weekday=" 星期四 ";
+       else if(myweekday == 5)
+       weekday=" 星期五 ";
+       else if(myweekday == 6)
+       weekday=" 星期六 ";
+       document.write(year+"年"+mymonth+"月"+myday+"日 "+weekday);
+      </script>
+ </span>
+		</div>
+		<!-- 菜单 -->
+		<div class="w229">
+			<ol>
+				<li class="leftCurr"><a href="" target="rightFrame">全文检索</a></li>
+				<li><a href="" target="rightFrame">内容复用</a></li>
+				<li><a href="" target="rightFrame">定时任务管理</a></li>
+				<li><a href="" target="rightFrame">工作流管理</a></li>
+				<li><a href="" target="rightFrame">友情链接管理</a></li>
+				<li><a href="" target="rightFrame">广告管理</a></li>
+				<li><a href="" target="rightFrame">附件管理</a></li>
+				<li><a href="" target="rightFrame">共享管理</a></li>
+				<li><a href="" target="rightFrame">内容回收站</a></li>
+				<li><a href="" target="rightFrame">字典</a></li>
+				<li><a href="" target="rightFrame">评分组管理</a></li>
+				<li><a href="" target="rightFrame">生成二维码</a></li>
+				<li><a href="" target="rightFrame">提现管理</a></li>
+				<li><a href="" target="rightFrame">转账管理</a></li>
+				<li><a href="" target="rightFrame">内容收费统计</a></li>
+				<li><a href="" target="rightFrame">用户账户统计</a></li>
+				<li><a href="" target="rightFrame">页面静态化</a></li>
+				<li><a href="" target="rightFrame">词汇管理</a></li>
+				<li><a href="" target="rightFrame">数据备份</a></li>
+				<li><a href="" target="rightFrame">互动模块</a></li>
+				<li><a href="" target="rightFrame">采集管理</a></li>	
+			</ol>
+		</div>
+	</div>
+
 </body>
 </html>
