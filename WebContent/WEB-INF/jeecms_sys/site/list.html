@@ -10,9 +10,12 @@
 .position-div a{ color:#555555;}
 .box-positon{margin:16px 20px 0 20px; padding-bottom:14px; border-bottom:4px solid #f3f3f3;}
 .ropt{}
-.add/*添加*/{display:inline-block; color:#fff; font-size:13px; font-weight:bold; background:url(./publish-content.png) 8px center no-repeat #3694d7; border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px; -webkit-border-radius:3px; height:28px; line-height:28px; text-indent:18px; cursor:pointer; width:60px; outline:none;}
+.add/*娣诲姞*/{display:inline-block; color:#fff; font-size:13px; font-weight:bold; background:url(./publish-content.png) 8px center no-repeat #3694d7; border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px; -webkit-border-radius:3px; height:28px; line-height:28px; text-indent:18px; cursor:pointer; width:60px; outline:none;}
+.add:hover{background:url(./publish-content.png) 8px center no-repeat #429fe2;}
 .clear{ clear:both; font-size:0; line-height:0; height:0; width:100%; overflow:hidden;}
-	
+.del-button{border:1px solid #333333; color:#333; font-size:12px; border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px; -webkit-border-radius:3px; background:#fff; padding:4px 10px; cursor:pointer; outline:none;}
+
+.td{ width:120px; }
 </style>
 </head>
 <body>
@@ -23,24 +26,24 @@
 	<!-- 增加按钮 -->
 	<div class="box-positon">
 		<form class="ropt">
-			<input class="add" type="submit" value="增加站点"/>
+			<input class="add" style="width:100px;" type="submit" value="增加站点"/>
 		</form>
 		<div class="clear"></div>
 	</div>
 	<div class="body-box">
 		<form id="tableForm" method="post">
 			<table>
-				<tr>
+				<tr style="background:#f3f3f3">
 					<td><input type="checkbox"></td>
 					<td>ID</td>
-					<td>域名</td>
-					<td>访问路径</td>
-					<td>站点名称</td>
-					<td>路径</td>
-					<td>动态页后缀</td>
-					<td>静态页后缀</td>
-					<td>前台本地化</td>
-					<td>可操作选项</td>
+					<td class="td">域名</td>
+					<td class="td">访问路径</td>
+					<td class="td">站点名称</td>
+					<td class="td">路径</td>
+					<td class="td">动态页后缀</td>
+					<td class="td">静态页后缀</td>
+					<td class="td">前台本地化</td>
+					<td class="td">可操作选项</td>
 				</tr>
 				<tr>
 					<td><input type="checkbox"></td>
@@ -55,6 +58,7 @@
 					<td>可转载站点|修改|删除</td>
 				</tr>
 			</table>
+			<input class="del-button" type="button" value="删除">
 		</form>
 	</div>
 </body>
