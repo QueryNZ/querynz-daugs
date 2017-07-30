@@ -1,4 +1,4 @@
-package com.jeecms.common.utils;
+package com.jeecms.common.util;
 
 import java.util.List;
 
